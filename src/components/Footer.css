@@ -1,0 +1,35 @@
+/* src/components/Footer.css */
+
+/* ADDED: Styles for the handwritten note */
+.maker-note {
+    margin-bottom: 2rem;
+}
+
+.maker-note p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #CCA43B; /* Gold color */
+    margin: 0;
+    line-height: 1;
+}
+
+.maker-note span {
+    font-family: 'Oswald', sans-serif;
+    color: #E4D4A4;
+    font-style: italic;
+}
+/* END ADDED STYLES */
+
+
+.whisper-affirmation {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

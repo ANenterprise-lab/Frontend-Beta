@@ -1,0 +1,18 @@
+/* src/components/MuteButton.css */
+.mute-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #CCA43B;
+    border: 1px solid #CCA43B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1.2rem;
+}

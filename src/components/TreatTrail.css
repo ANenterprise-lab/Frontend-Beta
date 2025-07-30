@@ -1,0 +1,29 @@
+/* src/components/TreatTrail.css */
+.treat-trail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0;
+}
+
+.trail-item {
+    display: flex;
+    align-items: center;
+}
+
+.trail-item a {
+    font-family: 'Oswald', sans-serif;
+    color: #E4D4A4; /* Light gold */
+    font-size: 1.1rem;
+}
+
+.trail-item a:hover {
+    color: #FFF;
+}
+
+.trail-separator {
+    font-size: 1.2rem;
+    margin: 0 0.75rem;
+    color: #CCA43B;
+    opacity: 0.5;
+}

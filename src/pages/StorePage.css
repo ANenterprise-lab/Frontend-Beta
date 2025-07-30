@@ -1,0 +1,85 @@
+/* src/pages/StorePage.css */
+
+.product-card {
+  background: rgba(80, 80, 80, 0.15);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+.product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card .card-img-top {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* PET HOVER PORTRAIT STYLES */
+.pet-hover-portrait {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url('https://i.imgur.com/bbfVd6B.png'); /* The Corgi Image */
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 2;
+}
+
+.product-card:hover .pet-hover-portrait {
+  transform: translateY(0) rotate(-10deg); /* This makes the corgi slide up and tilt */
+}
+/* END PET HOVER PORTRAIT STYLES */
+
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Cart Section Styling */
+.cart-section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.remove-btn {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    cursor: pointer;
+}
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,66 @@
+/* src/pages/MyPetsPage.css */
+
+.pet-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.pet-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.mood-tracker-section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(204, 164, 59, 0.2);
+}
+
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.mood-button {
+    background: transparent;
+    border: 1px solid #CCA43B;
+    color: #CCA43B;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Oswald', sans-serif;
+}
+
+.mood-button:hover {
+    background: #CCA43B;
+    color: #04471C;
+    transform: translateY(-2px);
+}
+
+.mood-history {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.mood-history h5 {
+    font-family: 'Bitcount', sans-serif;
+    color: #E4D4A4;
+}
+
+.mood-history-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #ccc;
+}
+
+.mood-history-list li {
+    background-color: rgba(0,0,0,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,165 @@
+/* anenterprise-lab/frontend/frontend-a129faec840f2542d190aa038be051711b19e5fa/src/index.css */
+/* MODIFIED: Overall theme to "Neon Glass" concept */
+:root {
+  font-family: 'Orbitron', sans-serif; /* Applied Orbitron font */
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark; /* Explicitly prefer dark mode for this theme */
+  color: #e0e0e0; /* Default text color, slightly off-white for subtle glow */
+  
+  /* Original background-color, now part of linear-gradient fallback */
+  background-color: #242424; 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #00e6e6; /* Bright cyan for links */
+  text-decoration: none; /* Removed underline by default for sleekness */
+}
+a:hover {
+  color: #00aaff; /* Slightly different blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px; 
+  overflow-x: hidden; 
+
+  /* NEW: Background Gradient from "Neon Glass" description */
+  background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+  background-attachment: fixed; /* Keep background fixed when scrolling */
+  /* Ensure text color is white for default body text */
+  color: #fff; 
+  font-family: 'Orbitron', sans-serif; /* Ensure body also uses Orbitron */
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif; /* Ensure headings use Orbitron */
+  margin: 1rem 0;
+  color: #00e6e6; /* Neon cyan for headings */
+  text-shadow: 0 0 5px #00e6e6, 0 0 10px #00e6e6, 0 0 15px rgba(0, 230, 230, 0.5); /* Subtle neon glow */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #00e6e6; /* Neon border */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgba(0, 230, 230, 0.1); /* Subtle translucent background */
+  color: #fff; /* White text for buttons */
+  cursor: pointer;
+  transition: all 0.25s ease-in-out; /* Smoother transition */
+  box-shadow: 0 0 5px rgba(0, 230, 230, 0.5); /* Subtle button glow */
+}
+button:hover {
+  border-color: #00aaff; /* Hover effect */
+  background-color: rgba(0, 170, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.7);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Keep browser outline for accessibility */
+}
+
+/* No specific light mode media query changes for global colors for this theme */
+/* We want a consistent dark "Neon Glass" feel */
+@media (prefers-color-scheme: light) {
+  /* You might comment out or remove this block if you want the dark theme always */
+  /* :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  } */
+}
+
+/* Basic Bootstrap overrides for transparent buttons where needed */
+.btn-light {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    color: #fff !important;
+}
+.btn-light:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: #fff !important;
+}
+.btn-danger {
+    background-color: rgba(255, 0, 0, 0.1) !important;
+    border-color: rgba(255, 0, 0, 0.3) !important;
+    color: #fff !important;
+}
+.btn-danger:hover {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    border-color: rgba(255, 0, 0, 0.5) !important;
+    color: #fff !important;
+}
+.btn-info { /* For View Details buttons */
+    background-color: rgba(0, 200, 200, 0.1) !important;
+    border-color: rgba(0, 200, 200, 0.3) !important;
+    color: #fff !important;
+}
+.btn-info:hover {
+    background-color: rgba(0, 200, 200, 0.2) !important;
+    border-color: rgba(0, 200, 200, 0.5) !important;
+    color: #fff !important;
+}
+/* Add this to the end of your src/index.css file */
+
+/* Mood-Based Color Tinting */
+.app-wrapper {
+  /* Smooth transition between themes */
+  transition: background 1s ease-in-out;
+}
+
+body {
+  /* We move the background property from body to the new theme classes */
+  background: transparent;
+}
+
+/* Default/Night Theme */
+.theme-night {
+  background: #36454F; /* Dark Charcoal Grey */
+}
+
+/* Morning Theme (Soft Green) */
+.theme-morning {
+  background: linear-gradient(to bottom, #6a9113, #141517);
+}
+
+/* Afternoon Theme (Neutral) */
+.theme-afternoon {
+   background: #36454F; /* Same as night for now */
+}
+
+/* Evening Theme (Warm Amber) */
+.theme-evening {
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+}
+
+/* Adjust text color on the warm evening theme for readability */
+.theme-evening,
+.theme-evening h1,
+.theme-evening h2,
+.theme-evening h3,
+.theme-evening a {
+  color: #2c1e19; /* Dark brown text */
+}
+
+.theme-evening a:hover {
+  color: #000;
+}

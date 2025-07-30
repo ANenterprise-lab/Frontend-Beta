@@ -1,0 +1,120 @@
+/* src/pages/CheckoutPage.css */
+
+.checkout-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+/* Quote Banner */
+.quote-banner {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    background: rgba(4, 71, 28, 0.3); /* Subtle Royal Green background */
+    border-left: 5px solid #CCA43B; /* Gold accent */
+    border-right: 5px solid #CCA43B;
+}
+
+.quote-banner p {
+    font-family: 'Bitcount', sans-serif; /* Using your heading font for impact */
+    font-size: 1.8rem;
+    color: #E4D4A4; /* Light gold text */
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Progress Tracker */
+.progress-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.progress-line {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background-image: linear-gradient(to right, #CCA43B 50%, #555 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.progress-tracker.step-2 .progress-line { background-position: 50% 0; }
+.progress-tracker.step-3 .progress-line { background-position: 0 0; }
+
+
+.step {
+    text-align: center;
+    width: 100px;
+    z-index: 2;
+    position: relative;
+}
+
+.step-icon {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.step.active .step-icon {
+    transform: scale(1.2);
+    color: #CCA43B;
+}
+
+.step-label {
+    font-family: 'Oswald', sans-serif;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.step.active .step-label {
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+
+/* Form Styling */
+.checkout-form {
+    background: rgba(80, 80, 80, 0.15);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.doodled-input {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.3) !important;
+    border-radius: 0 !important;
+    color: #F5F5F5 !important;
+    padding-left: 0.5rem !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem !important;
+}
+
+.doodled-input:focus {
+    box-shadow: none !important;
+    border-bottom-color: #CCA43B !important;
+}
+
+/* Paw-tap Payment Button */
+.payment-button {
+    font-size: 1.2rem !important;
+    padding: 0.8rem 1.5rem !important;
+    border-radius: 50px !important;
+    width: 100%;
+}
+
+.payment-button:before {
+    content: '🐾';
+    margin-right: 10px;
+    font-size: 1.5rem;
+}

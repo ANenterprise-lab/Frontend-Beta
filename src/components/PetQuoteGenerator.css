@@ -1,0 +1,21 @@
+/* src/components/PetQuoteGenerator.css */
+.quote-generator-container {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.quote-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-family: 'Bitcount', sans-serif;
+    font-size: 2rem;
+    min-height: 150px; /* Give it space so the box doesn't resize */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E4D4A4;
+    margin-bottom: 2rem;
+}

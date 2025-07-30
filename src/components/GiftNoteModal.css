@@ -1,0 +1,53 @@
+/* src/components/GiftNoteModal.css */
+
+.packaging-preview {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #f4f4f4; /* A light background for the package */
+    animation: gentle-fade-in 0.5s ease-out;
+}
+
+.preview-product-image {
+    width: 100%;
+    opacity: 0.15; /* Make product image a faint watermark */
+}
+
+.preview-note-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.preview-note-overlay p {
+    font-family: 'Oswald', sans-serif;
+    color: #555;
+    margin: 0;
+}
+
+.handwritten-note-preview {
+    font-family: 'Dancing Script', cursive; /* Using the handwritten font from footer */
+    font-size: 2rem;
+    color: #04471C; /* Royal Green */
+    line-height: 1.2;
+    display: block; /* Ensures it takes its own line */
+    word-wrap: break-word;
+}
+
+@keyframes gentle-fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

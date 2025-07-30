@@ -1,0 +1,66 @@
+/* src/pages/RewardsPage.css */
+
+.rewards-header {
+    margin-bottom: 3rem;
+}
+
+.points-card {
+    border-color: #CCA43B;
+    border-width: 2px;
+}
+
+.points-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #E4D4A4;
+    margin: 0;
+}
+
+.points-value {
+    font-family: 'Bitcount', sans-serif;
+    font-size: 5rem;
+    color: #CCA43B;
+    line-height: 1;
+}
+
+.badges-section {
+    margin-top: 4rem;
+}
+
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: gentle-fade-in 1s ease-out forwards;
+    opacity: 0;
+}
+
+.badge-icon {
+    font-size: 4rem;
+    background: rgba(204, 164, 59, 0.1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border: 2px dashed #CCA43B;
+}
+
+.badge-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+@keyframes gentle-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

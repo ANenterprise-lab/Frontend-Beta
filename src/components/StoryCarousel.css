@@ -1,0 +1,59 @@
+/* src/components/StoryCarousel.css */
+
+.story-carousel-container {
+    padding: 4rem 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-story-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 5rem;
+    min-height: 400px;
+}
+
+.story-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #CCA43B; /* Gold border */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.story-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.story-content h2 {
+    font-family: 'Bitcount', sans-serif;
+    color: #F5F5F5; /* Off-white for contrast */
+}
+
+.story-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    border-left: 3px solid #0A6B2D; /* Royal Green accent */
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: #ccc;
+}
+
+.story-content cite {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #E4D4A4;
+}
+
+/* Styling for carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #CCA43B;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
